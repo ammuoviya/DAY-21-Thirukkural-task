@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="'en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <title>CALL BACK </title>
+    <script>
+        function one(cb = () => {}) {
+    console.log('10')
+    cb();
+}
+
+function two(cb = () => {}) {
+    console.log('9')
+
+    cb();
+}
+
+function three(cb = () => {}) {
+    console.log('8')
+
+    cb();
+}
+
+function four(cb = () => {}) {
+    console.log('7')
+
+    cb();
+}
+
+function five(cb = ()  =>{}) {
+    console.log('6')
+    cb();
+} 
+
+function six(cb= () =>{}) {
+    console.log('5')
+    cb();
+} 
+
+function seven(cb = () =>{}) {
+    console.log('4')
+    cb();
+} 
+
+function eight(cb =() =>{}) {
+    console.log('3')
+    cb();
+} 
+
+function nine(cb =() =>{}) {
+    console.log('2')
+    cb();
+}
+
+function ten(cb = () =>{}) {
+    console.log('1')
+    cb();
+} 
+ 
+ function zero(cb = () =>{}) {
+      console.log('Happy Independenace Day');
+    
+    cb();
+ }
+  
+    
+ function greet() {
+  one(() => setTimeout(() =>{
+   two(() => setTimeout(() =>{
+    three(() => setTimeout(() =>{
+     four(() => setTimeout(() =>{
+      five(() => setTimeout(() =>{
+       six(() => setTimeout(() =>{
+        seven(() => setTimeout(() =>{
+         eight(() => setTimeout(() =>{
+           nine(() => setTimeout(() =>{
+             ten(() => setTimeout(() =>{
+               zero();
+             }, 1000));
+           },1000));
+         }, 1000));
+        },1000));
+       },1000));
+      }, 1000));
+     }, 1000));
+    }, 1000));
+   }, 1000));
+  }, 1000));
+ }
+ 
+greet();
+    </script>
+    </body>
